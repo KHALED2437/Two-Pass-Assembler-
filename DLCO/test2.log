@@ -1,0 +1,35 @@
+ERROR: Duplicate Label at line 4
+WARNING: Incorrect label format at line 10
+ERROR: Unknown Symbol 'nonesuch' as operand at line 5
+ERROR: Unknown Symbol 'nonesuch' as operand at line 5
+ERROR: Unknown Symbol '08ge' as operand at line 6
+ERROR: Unknown Symbol 'nonesuch' as operand at line 5
+ERROR: Unknown Symbol '08ge' as operand at line 6
+ERROR: Unknown Symbol '' as operand at line 7
+ERROR: Unknown Symbol 'nonesuch' as operand at line 5
+ERROR: Unknown Symbol '08ge' as operand at line 6
+ERROR: Unknown Symbol '' as operand at line 7
+ERROR: Operand not expected for 'add' at line 8
+ERROR: Unknown Symbol 'nonesuch' as operand at line 5
+ERROR: Unknown Symbol '08ge' as operand at line 6
+ERROR: Unknown Symbol '' as operand at line 7
+ERROR: Operand not expected for 'add' at line 8
+ERROR: Unknown Symbol '5, 6' as operand at line 9
+ERROR: Unknown Symbol 'nonesuch' as operand at line 5
+ERROR: Unknown Symbol '08ge' as operand at line 6
+ERROR: Unknown Symbol '' as operand at line 7
+ERROR: Operand not expected for 'add' at line 8
+ERROR: Unknown Symbol '5, 6' as operand at line 9
+ERROR: Unknown Symbol 'nonesuch' as operand at line 5
+ERROR: Unknown Symbol '08ge' as operand at line 6
+ERROR: Unknown Symbol '' as operand at line 7
+ERROR: Operand not expected for 'add' at line 8
+ERROR: Unknown Symbol '5, 6' as operand at line 9
+ERROR: Undefined mnemonic 'fibble' at line 11
+ERROR: Unknown Symbol 'nonesuch' as operand at line 5
+ERROR: Unknown Symbol '08ge' as operand at line 6
+ERROR: Unknown Symbol '' as operand at line 7
+ERROR: Operand not expected for 'add' at line 8
+ERROR: Unknown Symbol '5, 6' as operand at line 9
+ERROR: Undefined mnemonic 'fibble' at line 11
+ERROR: Undefined mnemonic '0def' at line 12

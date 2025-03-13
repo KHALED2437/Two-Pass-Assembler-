@@ -1,0 +1,197 @@
+/*****************************************************************************
+TITLE: Claims																																
+AUTHOR: MD.Khaled Hussain
+ROLL NO.: 2301CS24
+Declaration of Authorship
+This txt file, claims.txt, is part of the assignment of CS2102 at the 
+department of Computer Science and Engg, IIT Patna . 
+*****************************************************************************/
+Files:
+==========
+*All the files I submitted, asm.cpp and emu.cpp and claims.txt, have my name and student id at the start, along with a declaration of authorship.
+
+The evidence for Assembler including the output files from the nine test examples has also been uploaded. They are test1(3 output files), test2(3 output files), test3
+(3 output file), test4(3 output files), test5(3 output files), test6(3 output files), bubblesort(3 output files),reverse_array(3 output files),nth_fibonacci(3 output files). All the test files have been tested and work properly. 
+As for the evidence for the emulator is uploaded
+with all output files in file.TRACE format, for all the same files.
+
+*Both of my cpp programs did not show any errors and warnings when I compiled it with g++ file.cpp
+
+*Two programs are compilable with g++ asm.cpp -o asm and g++ emu.cpp -o emu.
+
+
+=============================
+Program format and structure:
+=============================
+1. The assembler:
+
+    * with two data structures to store respectively labels and mnemonic table with expected operands.
+    * uses a single routine for both passes.
+    * detects label erros.
+    * consistent and sensible formatting with sensible program structure. 
+    * sensible variable, function & type names with explanatory comments.
+		* advanced listing file.
+		* assembles test programs.
+	  * can implements and demonstrates the instruction SET.
+
+2. The emulator :
+
+    * with two data structures to store respectively memory, mnemonic table with expected operands
+    * loads object file, 
+* using these instructions we can access the following
+  	1: To get trace
+	2: To display ISA
+	3: To show memory dump before execution (only before running trace)
+	4: To show memory dump after execution (only after running trace)
+	5: Show memory reads
+	6: Show memory writes
+	7: Show registers and SP values
+	Any number >=8 to exit
+
+
+=============================
+Testing:
+=============================
+
+1. The assembler:
+
+I have tested nine examples shown as bellow. The errors only occurred in the file test2.asm and the errors are logged and shown in terminal.
+
+The others were tested without any errors detected and produced three output files, listing file, 
+error log file and machine readable object file, for each example. 
+
+After comparing the listing files and object file of all test files
+with the implemented result given on the assignment, both of them show no difference 
+from those provided.
+ 
+
+1)
+#Input: asm test1.asm
+#Output: 
+a. test1.l 
+b. test1.log (without any error messages)
+c. test1.o
+
+2)
+#Input:asm test2.asm
+#Output: 
+a. test2.l 
+b. test2.log (without error messages shown as below but also in log file)
+c. test2.o
+
+error messages:
+ERROR: Duplicate Label at line 4
+WARNING: Incorrect label format at line 10
+ERROR: Unknown Symbol 'nonesuch' as operand at line 5
+ERROR: Unknown Symbol '08ge' as operand at line 6
+ERROR: Unknown Symbol '' as operand at line 7
+ERROR: Operand not expected for 'add' at line 8
+ERROR: Unknown Symbol '5, 6' as operand at line 9
+ERROR: Undefined mnemonic 'fibble' at line 11
+ERROR: Undefined mnemonic '0def' at line 12
+3)
+#Input:./asm.exe test3.asm
+#Output: 
+a. test3.l 
+b. test3.log (without any error messages)
+c. test3.o
+
+4)
+#Input:./asm.exe test4.asm
+#Output: 
+a. test4.l 
+b. test4.log (without any error messages)
+c. test4.o
+
+5)
+#Input:./asm.exe test5.asm
+#Output: 
+a. test5.l 
+b. test5.log (without any error messages)
+c. test5.o
+
+6)
+#Input:./asm.exe test6.asm
+#Output: 
+a. test6.l 
+b. test6.log (without any error messages)
+c. test6.o
+
+7)
+#Input:./asm.exe bubblesort.asm
+#Output: 
+a. bubblesort.l 
+b. bubblesort.log (without any error messages)
+c. bubblesort.o
+
+
+8)
+#Input:./asm.exe  reverse_array.asm
+#Output: 
+a.reverse_array.l 
+b. reverse_array.log (without any error messages)
+c. reverse_array.o
+
+9)
+#Input:./asm.exe  nth_fibonacci.asm
+#Output: 
+a.nth_fibonacci.l 
+b. nth_fibonacci.log (without any error messages)
+c. nth_fibonacci.o
+
+
+
+
+
+
+
+
+2. The emulator:
+
+I have tested nine examples shown as below. The errors only occurred in the file test1.o and 
+the program immediately stopped with an error message of infinite loop on the screen. 
+
+The others were tested without any errors detected and produced excution data both on the screen and 
+output trace file for (bubblesort,nth_fibonacci,reverse_array,test4,test5,test6) according to the usage instruction. 
+
+
+1)
+#Input:./emu.exe -trace test1.o
+Error message: 
+Infinite loop detected
+3 number of instructions executed
+
+2)
+#Input:./emu.exe -trace test3.o
+4 number of instructions executed
+
+3)
+#Input:./emu.exe -trace test4.o
+47653 number of instructions executed
+#Output: test4.TRACE
+
+4)
+#Input:./emu.exe -trace test5.o
+41 number of instructions executed
+#Output: test5.TRACE
+5)
+#Input:./emu.exe -trace test6.o
+1403 number of instructions executed
+#Output: test6.TRACE
+
+6)
+#Input:./emu.exe -trace bubblesort.o
+295 number of instructions executed
+#Output: bubbleSort.TRACE
+
+7)
+#Input:./emu.exe -trace reverse_array.o
+187 number of instructions executed
+#Output: reverse_array.TRACE
+
+
+8)
+#Input:./emu.exe -trace nth_fibonacci.o
+148 number of instructions executed
+#Output: nth_fibonacci.TRACE
+
